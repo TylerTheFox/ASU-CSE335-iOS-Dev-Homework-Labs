@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="first" id="BYZ-38-t0r" customClass="ViewController" customModule="Lab2_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome to Space Walk App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsa-9e-RaY">
+                                <rect key="frame" x="96" y="96" width="219" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fsa-9e-RaY" secondAttribute="height" multiplier="73:7" id="Obp-lI-s51"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter your weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yga-Av-YCB">
+                                <rect key="frame" x="59" y="348" width="138" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Yga-Av-YCB" secondAttribute="height" multiplier="46:7" id="li6-dG-BhQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OHL-rJ-Qca">
+                                <rect key="frame" x="276" y="341" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OHL-rJ-Qca" secondAttribute="height" multiplier="97:34" id="h3s-ID-2yC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="1200px-The_Earth_seen_from_Apollo_17.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2t7-xI-Iz8">
+                                <rect key="frame" x="87" y="454" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2t7-xI-Iz8" secondAttribute="height" multiplier="15:8" id="fbe-99-A6t"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aU-Lk-dCF">
+                                <rect key="frame" x="135" y="694" width="110" height="30"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7aU-Lk-dCF" secondAttribute="height" multiplier="11:3" id="5ng-ZV-EUS"/>
+                                </constraints>
+                                <state key="normal" title="Go to Moon"/>
+                                <connections>
+                                    <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchDragInside" id="A6P-H4-dR6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="You are on earth now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEs-c2-OFs">
+                                <rect key="frame" x="135" y="153" width="161" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YEs-c2-OFs" secondAttribute="height" multiplier="23:3" id="OMH-MK-fm9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OHL-rJ-Qca" firstAttribute="width" secondItem="Fsa-9e-RaY" secondAttribute="width" id="71y-Vh-Wni"/>
+                            <constraint firstItem="YEs-c2-OFs" firstAttribute="width" secondItem="Fsa-9e-RaY" secondAttribute="width" id="Ayc-8f-Ln1"/>
+                            <constraint firstItem="Yga-Av-YCB" firstAttribute="height" secondItem="Fsa-9e-RaY" secondAttribute="height" id="JX6-8u-6bq"/>
+                            <constraint firstItem="2t7-xI-Iz8" firstAttribute="height" secondItem="Fsa-9e-RaY" secondAttribute="height" id="KHX-Iy-xAW"/>
+                            <constraint firstItem="7aU-Lk-dCF" firstAttribute="height" secondItem="Fsa-9e-RaY" secondAttribute="height" id="Tax-uc-FK7"/>
+                            <constraint firstItem="YEs-c2-OFs" firstAttribute="height" secondItem="Fsa-9e-RaY" secondAttribute="height" id="dsy-ZP-gQR"/>
+                            <constraint firstItem="7aU-Lk-dCF" firstAttribute="width" secondItem="Fsa-9e-RaY" secondAttribute="width" id="iAI-bg-Aqq"/>
+                            <constraint firstItem="Yga-Av-YCB" firstAttribute="width" secondItem="Fsa-9e-RaY" secondAttribute="width" id="oJi-22-sd7"/>
+                            <constraint firstItem="2t7-xI-Iz8" firstAttribute="width" secondItem="Fsa-9e-RaY" secondAttribute="width" id="z5t-uk-F9P"/>
+                            <constraint firstItem="OHL-rJ-Qca" firstAttribute="height" secondItem="Fsa-9e-RaY" secondAttribute="height" id="zgl-5g-mAr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HomeMessage" destination="YEs-c2-OFs" id="4b7-Nb-2iV"/>
+                        <outlet property="Title" destination="YEs-c2-OFs" id="fMb-sD-kv9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="75"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Nyc-yC-nUC">
+            <objects>
+                <viewController storyboardIdentifier="second" id="Zpg-qB-fAP" customClass="SecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vtV-zl-UxY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="You are on the Moon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBc-tb-XCr">
+                                <rect key="frame" x="147" y="71" width="157" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UBc-tb-XCr" secondAttribute="height" multiplier="157:21" id="aS4-6G-pol"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="FullMoon2010.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4Tl-iC-VNo">
+                                <rect key="frame" x="87" y="114" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Tl-iC-VNo" secondAttribute="height" multiplier="15:8" id="Ypr-iW-SJM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your weight in Earth is ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PS-yF-NgT">
+                                <rect key="frame" x="44" y="312" width="187" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9PS-yF-NgT" secondAttribute="height" multiplier="187:21" id="vUM-M4-UFD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your weight on Moon is ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uj0-oN-1kv">
+                                <rect key="frame" x="44" y="371" width="196" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uj0-oN-1kv" secondAttribute="height" multiplier="28:3" id="F1o-Hq-iPO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="I feel much lighter!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWE-r9-q72">
+                                <rect key="frame" x="137" y="456" width="141" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uWE-r9-q72" secondAttribute="height" multiplier="47:7" id="8CR-ZY-eG4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkd-9I-2Gq">
+                                <rect key="frame" x="155" y="531" width="89" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wkd-9I-2Gq" secondAttribute="height" multiplier="89:30" id="MYJ-Fj-uV9"/>
+                                </constraints>
+                                <state key="normal" title="Go to Jupiter"/>
+                                <connections>
+                                    <action selector="gotoJupiter" destination="Zpg-qB-fAP" eventType="touchUpInside" id="Mnw-wb-QRc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uG8-WL-095">
+                                <rect key="frame" x="155" y="620" width="81" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uG8-WL-095" secondAttribute="height" multiplier="27:10" id="0BZ-J9-DHP"/>
+                                </constraints>
+                                <state key="normal" title="Go To Earth"/>
+                                <connections>
+                                    <action selector="gotoEarth" destination="Zpg-qB-fAP" eventType="touchUpInside" id="HcX-E4-mbl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VVq-ap-NlQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uG8-WL-095" firstAttribute="width" secondItem="4Tl-iC-VNo" secondAttribute="width" id="1Gp-p5-cBY"/>
+                            <constraint firstItem="UBc-tb-XCr" firstAttribute="height" secondItem="4Tl-iC-VNo" secondAttribute="height" id="7V2-Vq-7Jb"/>
+                            <constraint firstItem="uj0-oN-1kv" firstAttribute="width" secondItem="4Tl-iC-VNo" secondAttribute="width" id="AEJ-x3-jOo"/>
+                            <constraint firstItem="uj0-oN-1kv" firstAttribute="height" secondItem="4Tl-iC-VNo" secondAttribute="height" id="GcR-LK-iau"/>
+                            <constraint firstItem="uWE-r9-q72" firstAttribute="width" secondItem="4Tl-iC-VNo" secondAttribute="width" id="H6n-Fm-Hpy"/>
+                            <constraint firstItem="9PS-yF-NgT" firstAttribute="width" secondItem="4Tl-iC-VNo" secondAttribute="width" id="TuT-gd-vxH"/>
+                            <constraint firstItem="Wkd-9I-2Gq" firstAttribute="width" secondItem="4Tl-iC-VNo" secondAttribute="width" id="UqL-cG-syM"/>
+                            <constraint firstItem="uG8-WL-095" firstAttribute="height" secondItem="4Tl-iC-VNo" secondAttribute="height" id="XLc-9l-6rh"/>
+                            <constraint firstItem="uWE-r9-q72" firstAttribute="height" secondItem="4Tl-iC-VNo" secondAttribute="height" id="bsT-rc-Hx6"/>
+                            <constraint firstItem="UBc-tb-XCr" firstAttribute="width" secondItem="4Tl-iC-VNo" secondAttribute="width" id="cWT-XD-j2f"/>
+                            <constraint firstItem="9PS-yF-NgT" firstAttribute="height" secondItem="4Tl-iC-VNo" secondAttribute="height" id="dyl-TA-1Ht"/>
+                            <constraint firstItem="Wkd-9I-2Gq" firstAttribute="height" secondItem="4Tl-iC-VNo" secondAttribute="height" id="rYQ-jS-bVo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="EarthLabel" destination="9PS-yF-NgT" id="P27-0r-6dw"/>
+                        <outlet property="MoonLabel" destination="uj0-oN-1kv" id="epD-J6-aqA"/>
+                        <outlet property="MoonTitle" destination="UBc-tb-XCr" id="KED-9h-573"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYT-kQ-aIS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="722" y="75"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="N2j-SX-bUv">
+            <objects>
+                <viewController storyboardIdentifier="third" id="18k-vg-08K" customClass="ThirdViewController" customModule="Lab2_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fT2-KU-zJ7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="You are on the Jupitor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1r-H7-TPd">
+                                <rect key="frame" x="142" y="77" width="167" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="d1r-H7-TPd" secondAttribute="height" multiplier="157:21" id="1CW-EZ-RG5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="iEv6pmS4gfbefs5JbwHWiJ.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kpl-XX-HUy">
+                                <rect key="frame" x="82" y="120" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Kpl-XX-HUy" secondAttribute="height" multiplier="15:8" id="yIe-oE-56d"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your weight in Earth is ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtH-TP-FtK">
+                                <rect key="frame" x="39" y="318" width="187" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FtH-TP-FtK" secondAttribute="height" multiplier="187:21" id="l4m-Q4-mG8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your weight on Jupitor is ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHa-ya-KSe">
+                                <rect key="frame" x="39" y="414" width="206" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wHa-ya-KSe" secondAttribute="height" multiplier="28:3" id="AdP-sh-Trq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="I feel much heavier!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUW-9e-QoJ">
+                                <rect key="frame" x="132" y="462" width="148" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MUW-9e-QoJ" secondAttribute="height" multiplier="47:7" id="WfQ-25-28o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhT-Gb-soY">
+                                <rect key="frame" x="156" y="537" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hhT-Gb-soY" secondAttribute="height" multiplier="89:30" id="Hxh-9f-gWB"/>
+                                </constraints>
+                                <state key="normal" title="Go to Earth"/>
+                                <connections>
+                                    <action selector="gotoEarth" destination="18k-vg-08K" eventType="touchUpInside" id="kAg-LD-ARk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSg-G9-r6v">
+                                <rect key="frame" x="161" y="623" width="83" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jSg-G9-r6v" secondAttribute="height" multiplier="27:10" id="Lwd-pL-fsY"/>
+                                </constraints>
+                                <state key="normal" title="Go To Moon"/>
+                                <connections>
+                                    <action selector="gotoMoon" destination="18k-vg-08K" eventType="touchUpInside" id="3Xr-zP-UEe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your weight on Moon is ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1f2-9u-E17">
+                                <rect key="frame" x="39" y="367" width="196" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1f2-9u-E17" secondAttribute="height" multiplier="28:3" id="N70-Jx-XwZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wK6-9B-lRc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hhT-Gb-soY" firstAttribute="width" secondItem="hhT-Gb-soY" secondAttribute="height" multiplier="89:30" id="0p7-sN-58s"/>
+                            <constraint firstItem="d1r-H7-TPd" firstAttribute="width" secondItem="d1r-H7-TPd" secondAttribute="height" multiplier="157:21" id="412-QB-ZAV"/>
+                            <constraint firstItem="MUW-9e-QoJ" firstAttribute="height" secondItem="Kpl-XX-HUy" secondAttribute="height" id="Kgu-9C-xI0"/>
+                            <constraint firstItem="FtH-TP-FtK" firstAttribute="width" secondItem="FtH-TP-FtK" secondAttribute="height" multiplier="187:21" id="Kzi-G5-50D"/>
+                            <constraint firstItem="Kpl-XX-HUy" firstAttribute="width" secondItem="Kpl-XX-HUy" secondAttribute="height" multiplier="15:8" id="RHa-uR-Vgl"/>
+                            <constraint firstItem="jSg-G9-r6v" firstAttribute="width" secondItem="Kpl-XX-HUy" secondAttribute="width" id="Rzm-qV-i51"/>
+                            <constraint firstItem="wHa-ya-KSe" firstAttribute="width" secondItem="wHa-ya-KSe" secondAttribute="height" multiplier="28:3" id="VBG-uU-G6m"/>
+                            <constraint firstItem="FtH-TP-FtK" firstAttribute="width" secondItem="Kpl-XX-HUy" secondAttribute="width" id="YCE-M8-H07"/>
+                            <constraint firstItem="1f2-9u-E17" firstAttribute="width" secondItem="Kpl-XX-HUy" secondAttribute="width" id="eeO-bG-DHu"/>
+                            <constraint firstItem="wHa-ya-KSe" firstAttribute="width" secondItem="wHa-ya-KSe" secondAttribute="height" multiplier="28:3" id="foe-Eb-8KD"/>
+                            <constraint firstItem="hhT-Gb-soY" firstAttribute="height" secondItem="Kpl-XX-HUy" secondAttribute="height" id="h0s-eT-2hV"/>
+                            <constraint firstItem="MUW-9e-QoJ" firstAttribute="width" secondItem="MUW-9e-QoJ" secondAttribute="height" multiplier="47:7" id="nrB-eY-9gC"/>
+                            <constraint firstItem="d1r-H7-TPd" firstAttribute="height" secondItem="Kpl-XX-HUy" secondAttribute="height" id="pTG-xY-azL"/>
+                            <constraint firstItem="jSg-G9-r6v" firstAttribute="width" secondItem="jSg-G9-r6v" secondAttribute="height" multiplier="27:10" id="rVV-n3-d3S"/>
+                            <constraint firstItem="FtH-TP-FtK" firstAttribute="height" secondItem="Kpl-XX-HUy" secondAttribute="height" id="s7R-ld-R0n"/>
+                            <constraint firstItem="d1r-H7-TPd" firstAttribute="width" secondItem="Kpl-XX-HUy" secondAttribute="width" id="ut1-JQ-lOx"/>
+                            <constraint firstItem="1f2-9u-E17" firstAttribute="height" secondItem="Kpl-XX-HUy" secondAttribute="height" id="vTO-Tp-iJQ"/>
+                            <constraint firstItem="hhT-Gb-soY" firstAttribute="width" secondItem="Kpl-XX-HUy" secondAttribute="width" id="wg4-mN-qU1"/>
+                            <constraint firstItem="MUW-9e-QoJ" firstAttribute="width" secondItem="Kpl-XX-HUy" secondAttribute="width" id="wm2-NE-ab7"/>
+                            <constraint firstItem="1f2-9u-E17" firstAttribute="width" secondItem="1f2-9u-E17" secondAttribute="height" multiplier="28:3" id="xSP-US-fLm"/>
+                            <constraint firstItem="jSg-G9-r6v" firstAttribute="height" secondItem="Kpl-XX-HUy" secondAttribute="height" id="z4L-0X-A7I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="EarthMessage" destination="FtH-TP-FtK" id="t9w-Vs-JLI"/>
+                        <outlet property="JupiterMEssage" destination="wHa-ya-KSe" id="6EE-bV-4uV"/>
+                        <outlet property="MoonMessage" destination="1f2-9u-E17" id="hXB-8j-C4O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BYw-60-gEu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1390" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1200px-The_Earth_seen_from_Apollo_17.jpg" width="1200" height="1201"/>
+        <image name="FullMoon2010.jpg" width="619.20001220703125" height="588.47998046875"/>
+        <image name="iEv6pmS4gfbefs5JbwHWiJ.png" width="1999" height="2000"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
